@@ -7,11 +7,11 @@ function my_toolbars( $toolbars ) {
 
 	// Add a new toolbar called "Very Simple"
 	$toolbars['Very Simple' ] = array();
-	$toolbars['Very Simple' ][1] = array('link', 'unlink', 'bold', 'italic' , 'underline', 'bullist', 'numlist' );
+	$toolbars['Very Simple' ][1] = array('link', 'unlink', 'bold', 'italic' , 'underline', 'bullist', 'numlist', 'charmap' );
 
 	// Add a new toolbar called "Most Simple"
 	$toolbars['Most Simple' ] = array();
-	$toolbars['Most Simple' ][1] = array('link', 'unlink', 'italic');
+	$toolbars['Most Simple' ][1] = array('link', 'unlink', 'italic', 'charmap');
 
 	// remove the 'Basic' toolbar completely
 	//unset( $toolbars['Basic' ] );
