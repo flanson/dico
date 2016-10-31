@@ -1,0 +1,65 @@
+<!-- structure générale d'une définition -->
+
+<!-- on englobe tout dans une liste de définition -->
+<dl>
+    <!-- une <dt> par type grammatical (ex: nom, adjectif) -->
+    <dt><dfn title="Terme défini">Terme défini</dfn> (type grammatical)</dt>
+    <!-- une <dd> par sens différent du terme (ex: 2 sens du type grammatical "nom")  -->
+    <dd>
+        <!-- on engloble le sens dans une <div>, pour le séparer des sous-sens éventuels -->
+        <div>
+            <!-- on met le sens dans un <p>, et infos sur le sens dans des <span> au sein du <p> -->
+            <p>
+                <span class="domaine">(domaine)</span>
+                <span class="precision">(precision d'usage)</span>
+                ma phrase de définition
+            </p>
+            <!-- on ajoute des <aside> pour les infos facultatives -->
+            <aside class="exemple">exemple d'usage du terme</aside>
+            <aside class="remarque">remarque facultative</aside>
+        </div>
+        <!-- s'il y a des sous-sens, on les liste dans une <ol> -->
+        <ol>
+            <!-- chaque sous-sens reprend la structure vue plus haut, dans une <li> -->
+            <li>
+                <div>
+                    <p>
+                        <span class="domaine">(domaine)</span>
+                        <span class="precision">(precision d'usage)</span>
+                        ma phrase de sous-définition
+                    </p>
+                    <aside>exemple d'usage du terme</aside>
+                    <aside>remarque facultative</aside>
+                </div> 
+            </li>
+            <!-- nouveau sous-sens, sans domaine, precision, exemple, ni remarque -->
+            <li>
+                <div>
+                    <p>
+                        ma phrase de sous-définition
+                    </p>
+                </div> 
+            </li>
+        </ol>
+    </dd>
+    <!-- nouveau sens, nouvelle <dd> -->
+    <dd>
+        <div>
+            <p>
+                ma phrase de définition
+            </p>
+        </div> 
+    </dd>
+    <!-- nouveau type grammatical, nouvelle <dt> -->
+    <dt><dfn title="Terme défini">Terme défini</dfn> (type grammatical 2)</dt>
+    <dd>
+        <div>
+            <p>
+                <span class="domaine">(domaine)</span>
+                <span class="precision">(precision d'usage)</span>
+                ma phrase de définition
+            </p>
+            <aside>exemple d'usage du terme</aside>
+            <aside>remarque facultative</aside>
+    </dd>
+</dl>
