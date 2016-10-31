@@ -1,6 +1,8 @@
 <?php 
 // adapted from https://www.advancedcustomfields.com/resources/customize-the-wysiwyg-toolbars/
 
+add_filter( 'acf/fields/wysiwyg/toolbars' , 'my_toolbars'  );
+
 function my_toolbars( $toolbars ) {
 
 	// Add a new toolbar called "Very Simple"
